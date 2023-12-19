@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    background-color: black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+    font-size: 18px;
+    padding: 5%;
+}
+
+card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: hsl(216, 50%, 16%);
+    color: white;
+    padding: 5%;
+}
+
+.image-container {
+    display: flex;
+    position: relative;
+}
+
+.header-image {
+    width: 100%;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;   
+    opacity: 0;
+}
+
+.image-container:hover .overlay-image {
+    opacity: 0.4;
+    cursor: pointer;
+    background-color: hsl(178, 100%, 50%);
+    width: 100%;  
+}
+
+
+header {
+    font-size: large;
+    font-weight: 600;
+    padding-top: 7%;
+}
+
+header:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+    line-height: 1.5rem;
+}
+
+.eth-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+
+}
+
+
+
+.eth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+    font-size: small
+}
+
+.eth img {
+    width: 11%;
+
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(215, 51%, 70%)
+}
+
+.time img {
+    width: 15%;
+}
+
+hr {
+    margin: 0;
+    border: 1px solid hsl(215, 32%, 27%);
+}
+
+.creator {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5%;
+    color: hsl(215, 51%, 70%)
+}
+
+.creator img {
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 9%;
+}
+
+.creator-name {
+    color: white;
+}
+
+.creator-name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+@media (min-width:320px){
+    main{
+        max-width: 60%;
+        max-height: 60%;
+        margin:auto;
+    }
+}
+@media (min-width:768px){
+    main{
+        max-width: 40%;
+        max-height: 60%;
+        margin:auto;
+    }
+}
+@media (min-width:1024px){
+    main{
+        max-width: 30%;
+        max-height: 50%;
+        margin:auto;
+    }
+    
+}
